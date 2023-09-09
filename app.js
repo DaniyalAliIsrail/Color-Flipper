@@ -1,12 +1,14 @@
-const getColor = ()=>{
-const randomNum = Math.floor(Math.random()*16771572);
-const randomCode = "#" + randomNum.toString(16)
-document.body.style.backgroundColor=randomCode;
-document.getElementById("btn").style.backgroundColor =randomCode;
-//show text color in screen
-document.getElementById("clr-code").innerText=randomCode;
-}
-// event call
-document.getElementById("btn").addEventListener("click",getColor)
-//init call
-getColor();
+document.getElementById("btn").addEventListener("click", getcolor=()=>{
+       const randNum = Math.floor(Math.random()*16771567);
+       const randColor = "#"+randNum.toString(16)
+       console.log(randColor);
+       document.body.style.backgroundColor=randColor
+       const colorCode =document.getElementById("color-code")
+       colorCode.innerText=randColor;
+       const btn1 = document.getElementById("btn").style.backgroundColor=randColor;
+       
+
+
+});
+getcolor()
+
